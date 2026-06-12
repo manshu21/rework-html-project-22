@@ -1,0 +1,134 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Landing Page</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body class="font-sans bg-white">
+    <!-- Sticky Navbar -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+      <div class="flex items-center justify-between px-6 md:px-20 py-4">
+        <div class="flex items-center gap-2">
+          <img class="h-6 w-auto" src="resources/img/logo.png" alt="Logo" />
+          <p class="font-bold text-lg">Project</p>
+        </div>
+
+        <nav class="hidden md:flex gap-8">
+          <a href="#" class="hover:text-blue-600 transition">Product</a>
+          <a href="#" class="hover:text-blue-600 transition">Solutions</a>
+          <a href="#" class="hover:text-blue-600 transition">Resources</a>
+          <a href="#" class="hover:text-blue-600 transition">Pricing</a>
+          <a href="#" class="font-semibold hover:text-blue-600 transition"
+            >Log In</a
+          >
+        </nav>
+
+        <button
+          class="bg-black text-white px-5 py-2 rounded-lg hover:bg-gray-800 transition duration-300 cursor-pointer"
+        >
+          Get AI Free
+        </button>
+      </div>
+    </header>
+
+    <section
+      class="bg-gradient-to-r from-[#FFE8D6] to-white min-h-screen px-6 md:px-12 py-10"
+    >
+      <div class="text-center">
+        <h1 class="text-3xl md:text-4xl font-bold leading-tight">
+          Write, plan, share.
+          <br />
+          With AI at your side.
+        </h1>
+
+        <p class="mt-5 text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
+          It is the connected workspace where better, faster work happens. Now
+          with AI.
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+          <button
+            class="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition duration-300"
+          >
+            Get AI Free
+            <i class="fa-solid fa-arrow-right ml-1"></i>
+          </button>
+
+          <button
+            class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300"
+          >
+            Request a Demo
+          </button>
+        </div>
+      </div>
+
+      <div class="relative flex justify-center mt-16">
+        <div
+          class="hidden md:flex absolute left-8 top-24 bg-white rounded-xl shadow-2xl p-4 w-56 hover:scale-105 transition duration-300"
+        >
+          <div
+            class="w-12 h-12 rounded-lg bg-pink-100 flex items-center justify-center"
+          >
+            <i class="fa-solid fa-book text-pink-500"></i>
+          </div>
+
+          <div class="ml-3">
+            <h3 class="font-bold">Tasks</h3>
+            <p class="text-sm text-gray-500">12 tasks completed today</p>
+          </div>
+        </div>
+
+        <img
+          class="w-full max-w-lg h-auto rounded-xl shadow-2xl"
+          src="resources/img/hero-img.avif"
+          alt="Dashboard Preview"
+        />
+
+        <div
+          class="hidden md:flex absolute right-8 top-16 bg-white rounded-xl shadow-2xl p-4 w-56 hover:scale-105 transition duration-300"
+        >
+          <div
+            class="w-12 h-12 rounded-lg bg-green-100 flex items-center justify-center"
+          >
+            <i class="fa-solid fa-check text-green-500"></i>
+          </div>
+
+          <div class="ml-3">
+            <h3 class="font-bold">Project Status</h3>
+            <p class="text-green-500 text-sm">On Track</p>
+          </div>
+        </div>
+
+        <div
+          class="hidden md:flex absolute right-20 bottom-8 bg-white rounded-xl shadow-2xl p-4 w-60 hover:scale-105 transition duration-300"
+        >
+          <div>
+            <h3 class="font-bold">Team Activity</h3>
+
+            <img
+              src="resources/img/users.png"
+              alt="Users"
+              class="h-10 mt-2 rounded"
+            />
+          </div>
+
+          <span class="ml-3 mt-8 text-gray-600"> +5 Online </span>
+        </div>
+      </div>
+    </section>
+
+    <button
+      class="fixed bottom-6 right-6 w-14 h-14 rounded-full bg-black text-white shadow-xl hover:scale-110 transition duration-300 z-50"
+    >
+      <i class="fa-solid fa-comment text-xl"></i>
+    </button>
+  </body>
+</html>
